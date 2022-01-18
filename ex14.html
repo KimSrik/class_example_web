@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 10px;
+            height: 10px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-image: url('./images/image-html.jpg');
+            background-position: fixed;
+            transition: width 0.1s, height 0.1s;
+
+            cursor: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script>
+        let mouseCircle = document.querySelector('.box');
+
+        document.addEventListener('mousemove', function(e){
+            let mouseX = e.clientX;
+            let mouseY = e.clientY;
+            console.log('마우스X 좌표 : ' + mouseX + '  마우스Y 좌표 : ' + mouseY);
+            mouseCircle.style.left = (mouseX - 50) + 'px';
+            mouseCircle.style.top = (mouseY - 50) + 'px';
+            mouseCircle.style.width = 100 + 'px';
+            mouseCircle.style.height = 100 + 'px';
+        })
+    </script>
+</body>
+</html>
