@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .wrap{
+            width:100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .box{
+            height: 500px;
+            border: 10px solid black;
+            padding: 20px;
+            background-color: red;
+            display: flex;
+            flex-flow: row wrap;
+            /* flex-direction: column-reverse; */
+
+            justify-content: flex-start;
+            justify-content: center;
+            justify-content: space-between;
+
+            
+        }
+        .child-box{
+            width: 290px;
+            /* margin-right: 20px; */
+        }
+
+        .child01{
+            background-color: green;
+        }
+        .child02{
+            background-color: blue;
+        }
+        .child03{
+            background-color: cyan;
+        }
+        .child04{
+            background-color: magenta;
+            margin-right: 0;
+        }
+        .after{
+            clear:both;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box">
+            <div class="child-box child01"></div>
+            <div class="child-box child02"></div>
+            <div class="child-box child03"></div>
+            <div class="child-box child04"></div>
+            <div class="after"></div>
+
+        </div>
+    </div>
+</body>
+</html>
