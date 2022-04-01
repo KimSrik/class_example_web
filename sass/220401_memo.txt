@@ -1,0 +1,12 @@
+HTML(React) + CSS(전처리기들->SASS, SCSS, LESS, Ruby) + javaScript(Node.js, React, Viu) => 웹표준(프론트).
+
+SASS, SCSS는 서버에서 번역해서 사용자에게 제공해준다.
+(서버에는 css로 저장되는게 아니다. 
+scss로 저장되서 필요할때마다 번역해서 제공)
+
+Node.js : javaScript Back End 동작환경 제공 툴
+React, Viu : Node.js 환경에서 동작하는 프로그램
+
+http://localhost:8080/project/index.html	->제일 웹 표준
+http://localhost:8080/project/index.php
+http://localhost:8080/project/index.jsp
